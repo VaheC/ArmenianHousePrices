@@ -19,3 +19,7 @@ def save_object(file_path, obj):
     
 def evaluate_model(X_train, y_train, X_test, y_test, models):
     # create a function to return the results
+    pass
+
+def load_object(file_path):
+    return pickle.load(open(file_path, 'rb'))
