@@ -29,7 +29,7 @@ class DataIngestion:
 
             logging.info("Dataset is read as pandas dataframe!!!")
 
-            os.mkdir(os.path.join(self.ingestion_config.raw_data_path), exist_ok=True)
+            os.mkdir(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
             df.to_csv(self.ingestion_config.raw_data_path, index=False)
 
             logging.info("Raw data is saved in artifacts!!!")
